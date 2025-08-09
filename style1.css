@@ -253,7 +253,7 @@ body {
     .outside,
     .inside {
       height: 100%;
-      width: 50%;
+      width: 60%;
       position: absolute;
       left: 50.1%;
     }
@@ -346,6 +346,6 @@ body {
 }
 
 .card.expanded .inside p {
-  font-size: 14px; /* normal when card is expanded */
+  font-size: 12px; /* normal when card is expanded */
 }
 
