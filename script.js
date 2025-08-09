@@ -237,7 +237,7 @@ function createCakeAnimation( ) {
   startHappyBirthdayFireworks();
   setTimeout(() => {
     document.getElementById("tapButton").style.display = "block";
-  }, 1000); 
+  }, 14000); 
 }
 
 
@@ -297,94 +297,7 @@ function openCard() {
     giftBtn.style.display = 'none';
     e.stopPropagation();
   });
-
-  // // Add gift button functionality
-  // giftBtn.addEventListener("click", function () {
-  //   showGiftBox();
-  // });
 }  
-
-// function showGiftBox() {
-//   // Create overlay (covers entire screen)
-//   const overlay = document.createElement("div");
-//   overlay.className = "gift-box-overlay";
-//   overlay.style.position = "fixed";
-//   overlay.style.top = "0";
-//   overlay.style.left = "0";
-//   overlay.style.width = "100%";
-//   overlay.style.height = "100%";
-//   overlay.style.zIndex = "9999"; // on top of everything
-//   overlay.style.display = "flex";
-//   overlay.style.alignItems = "center";
-//   overlay.style.justifyContent = "center";
-
-//   // Inner HTML for backdrop + box
-//   overlay.innerHTML = `
-//     <div class="gift-backdrop" style="
-//       position:absolute;
-//       inset:0;
-//       background:rgba(0,0,0,0.4);
-//       backdrop-filter:blur(8px);
-//       z-index:0;
-//     "></div>
-
-//     <div class="gift-box-wrapper">
-//   <div class="box">
-//     <div class="box-body">
-//       <div class="box-lid">
-//         <div class="box-bowtie"></div>
-//       </div>
-//     </div>
-//   </div>
-
-//   <!-- Messages OUTSIDE the box -->
-//   <div class="message-text" id="msg1" >Oops! Gift not found 😅</div>
-//   <div class="message-text" id="msg2" >But wait...</div>
-//   <div class="message-text" id="msg3" >What do you need more than me? 💁</div>
-
-//   <!-- Video OUTSIDE the box -->
-//   <div class="video-container" id="videoContainer" style="display:none;">
-//     <video width="350" controls autoplay>
-//       <source src="your-wish-video.mp4" type="video/mp4">
-//       Your browser does not support the video tag.
-//     </video>
-//   </div>
-// </div>
-
-//   `;
-
-//   // Append to body
-//   document.body.appendChild(overlay);
-
-//   // Get elements
-//   const giftLid = document.getElementById("giftLid");
-//   const msg1 = document.getElementById("msg1");
-//   const msg2 = document.getElementById("msg2");
-//   const msg3 = document.getElementById("msg3");
-//   const videoContainer = document.getElementById("videoContainer");
-
-//   setTimeout(() => { 
-//   msg1.classList.add("show"); 
-// }, 2000);
-
-// setTimeout(() => { 
-//   msg1.classList.remove("show"); // hide previous
-//   msg2.classList.add("show"); 
-// }, 4500);
-
-// setTimeout(() => { 
-//   msg2.classList.remove("show"); // hide previous
-//   msg3.classList.add("show"); 
-// }, 7000);
-
-// setTimeout(() => {
-//   msg3.classList.remove("show");
-//   videoContainer.style.display = "block";
-// }, 10000);
-
-// }
-
-
 
 
 function startHappyBirthdayFireworks() {
