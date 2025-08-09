@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+.countdown h1 {
+  font-size: 5rem;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.loading-bg {
+  background-color: #ffe6f0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.cupcake-track {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.cupcake {
+  animation: bounce 1.5s infinite;
+}
+
+.cupcake:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.cupcake:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.loading-box h2 {
+  font-family: 'Segoe UI', cursive;
+  color: #cc3366;
+  font-size: 2em;
+}
+
+.floating-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.float-icon {
+  position: absolute;
+  bottom: -50px;
+  animation: floatUp 3s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0.8; }
+  100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+
+/* Countdown background same as loading */
+.countdown-page {
+  background: linear-gradient(to top, #ffe0f0, #ffedf7);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* Card styling */
+.countdown-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 100, 150, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Title */
+.countdown-box h2 {
+  color: #d6006d;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Timer blocks */
+.timer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.time-segment {
+  background: #f9f1f8;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.time-segment .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a9005e;
+}
+
+.time-segment .label {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: #80003c;
+}
+
+/* Message */
+.footer-msg {
+  font-size: 1rem;
+  color: #7c2c77;
+}
+
+/* Dots animation */
+.dots {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ff77c2;
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 1.5s infinite;
+  margin: 0 3px;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes blink {
+  0%, 80%, 100% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
