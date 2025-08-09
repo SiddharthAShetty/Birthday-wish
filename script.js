@@ -263,7 +263,7 @@ function openCard() {
         <div class="back"></div>
       </div>
       <div class="inside" id="inside">
-        <p>Siya wishing you many many happy returns of the day 🎉🎉 May this year be filled with joy and happiness 😊neen yen yen maadbeku anta ankodiya matte ninna asegalyella neraverali adrinda nangu saa kushi aagutte and  I’ll always be grateful to have you siyuu 💓 no matter what I’ll always be there for you just keep smiling 😁 party hard haa naana tadkodidukku tumbaa thanks haa positive aagi iru matte yavaglu heege iru devru oled maadli ~ your's simha 😅 ‍</p>
+        <p>Wishing you many many happy returns of the day Siya 🥳🥳 May this year be filled with joy and happiness 😊 May all your dreams come true and I’m so grateful to have you Siyuu 💖 and i'would be happy to see you achieve everything you’ve wished for and would always be right by your side 😁 yaavglu neen hegee iru ~ your's simha 😅 ‍</p>
       </div>
     </div>
     <button id="giftBtn" class="gift-btn">Open Gift</button>
