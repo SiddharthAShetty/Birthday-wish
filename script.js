@@ -237,7 +237,7 @@ function createCakeAnimation( ) {
   startHappyBirthdayFireworks();
   setTimeout(() => {
     document.getElementById("tapButton").style.display = "block";
-  }, 14000); 
+  }, 16000); 
 }
 
 
